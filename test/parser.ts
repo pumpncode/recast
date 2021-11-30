@@ -1,11 +1,11 @@
-import assert from "assert";
-import { parse } from "../lib/parser";
-import { getReprinter } from "../lib/patcher";
-import { Printer } from "../lib/printer";
-import { fromString } from "../lib/lines";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import { parse } from "../lib/parser.ts";
+import { getReprinter } from "../lib/patcher.ts";
+import { Printer } from "../lib/printer.ts";
+import { fromString } from "../lib/lines.ts";
+import * as types from "https://esm.sh/ast-types";
 const namedTypes = types.namedTypes;
-import FastPath from "../lib/fast-path";
+import FastPath from "../lib/fast-path.ts";
 import { EOL as eol } from "os";
 const nodeMajorVersion = parseInt(process.versions.node, 10);
 

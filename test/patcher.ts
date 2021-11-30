@@ -1,13 +1,13 @@
-import assert from "assert";
-import * as recast from "../main";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as recast from "../main.ts";
+import * as types from "https://esm.sh/ast-types";
 const n = types.namedTypes;
 const b = types.builders;
-import { getReprinter, Patcher } from "../lib/patcher";
-import { fromString } from "../lib/lines";
-import { parse } from "../lib/parser";
-import * as flowParser from "../parsers/flow";
-import FastPath from "../lib/fast-path";
+import { getReprinter, Patcher } from "../lib/patcher.ts";
+import { fromString } from "../lib/lines.ts";
+import { parse } from "../lib/parser.ts";
+import * as flowParser from "../parsers/flow.ts";
+import FastPath from "../lib/fast-path.ts";
 import { EOL as eol } from "os";
 
 const code = [

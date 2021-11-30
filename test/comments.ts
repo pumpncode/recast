@@ -1,11 +1,11 @@
 "use strict";
 
-import * as recast from "../main";
+import * as recast from "../main.ts";
 const n = recast.types.namedTypes;
 const b = recast.types.builders;
-import { Printer } from "../lib/printer";
-import { fromString } from "../lib/lines";
-import assert from "assert";
+import { Printer } from "../lib/printer.ts";
+import { fromString } from "../lib/lines.ts";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
 import { EOL as eol } from "os";
 
 const annotated = [

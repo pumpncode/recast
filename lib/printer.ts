@@ -1,14 +1,14 @@
-import assert from "assert";
-import { printComments } from "./comments";
-import { Lines, fromString, concat } from "./lines";
-import { normalize as normalizeOptions } from "./options";
-import { getReprinter } from "./patcher";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import { printComments } from "./comments.ts";
+import { Lines, fromString, concat } from "./lines.ts";
+import { normalize as normalizeOptions } from "./options.ts";
+import { getReprinter } from "./patcher.ts";
+import * as types from "https://esm.sh/ast-types";
 const namedTypes = types.namedTypes;
 const isString = types.builtInTypes.string;
 const isObject = types.builtInTypes.object;
-import FastPath from "./fast-path";
-import * as util from "./util";
+import FastPath from "./fast-path.ts";
+import * as util from "./util.ts";
 
 export interface PrintResultType {
   code: string;

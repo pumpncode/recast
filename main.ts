@@ -1,8 +1,8 @@
-import fs from "fs";
-import * as types from "ast-types";
-import { parse } from "./lib/parser";
-import { Printer } from "./lib/printer";
-import { Options } from "./lib/options";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import * as types from "https://esm.sh/ast-types";
+import { parse } from "./lib/parser.ts";
+import { Printer } from "./lib/printer.ts";
+// import { Options } from "./lib/options.ts";
 
 export {
   /**
@@ -30,12 +30,12 @@ export {
  *     }
  *   });
  */
-export { visit } from "ast-types";
+export { visit } from "https://esm.sh/ast-types";
 
 /**
  * Options shared between parsing and printing.
  */
-export { Options } from "./lib/options";
+// export { Options } from "./lib/options.ts";
 
 /**
  * Reprint a modified syntax tree using as much of the original source

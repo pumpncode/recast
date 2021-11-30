@@ -1,11 +1,11 @@
-import assert from "assert";
-import path from "path";
-import fs from "fs";
-import * as recast from "../main";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import path from "https://deno.land/std@0.116.0/node/path.ts";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import * as recast from "../main.ts";
+import * as types from "https://esm.sh/ast-types";
 import { EOL as eol } from "os";
-import * as parser from "../parsers/typescript";
-import { Printer } from "../lib/printer";
+import * as parser from "../parsers/typescript.ts";
+import { Printer } from "../lib/printer.ts";
 
 const { namedTypes: n } = types;
 const printer = new Printer();

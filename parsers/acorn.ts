@@ -5,7 +5,7 @@
 //     parser: require("recast/parsers/acorn")
 //   });
 //
-import { getOption } from "../lib/util";
+import { getOption } from "../lib/util.ts";
 
 export function parse(source: string, options?: any) {
   const comments: any[] = [];

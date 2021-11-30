@@ -1,5 +1,5 @@
 import { parse as babelParse } from "@babel/parser";
-import getBabelOptions, { Overrides } from "./_babel_options";
+import getBabelOptions, { Overrides } from "./_babel_options.ts";
 
 type BabelParser = { parse: typeof babelParse };
 

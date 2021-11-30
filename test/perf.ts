@@ -1,6 +1,6 @@
-import path from "path";
-import fs from "fs";
-import * as recast from "../main";
+import path from "https://deno.land/std@0.116.0/node/path.ts";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import * as recast from "../main.ts";
 
 const source = fs.readFileSync(
   path.join(__dirname, "data", "backbone.js"),

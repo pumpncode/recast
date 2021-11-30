@@ -1,8 +1,8 @@
-import assert from "assert";
-import * as esprima from "esprima";
-import { parse } from "../lib/parser";
-import { Printer } from "../lib/printer";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as esprima from "https://esm.sh/esprima";
+import { parse } from "../lib/parser.ts";
+import { Printer } from "../lib/printer.ts";
+import * as types from "https://esm.sh/ast-types";
 import { EOL as eol } from "os";
 
 const printer = new Printer();

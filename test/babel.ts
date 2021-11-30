@@ -1,5 +1,5 @@
-import assert from "assert";
-import * as recast from "../main";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as recast from "../main.ts";
 const n = recast.types.namedTypes;
 const b = recast.types.builders;
 import { EOL as eol } from "os";

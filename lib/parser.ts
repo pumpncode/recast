@@ -1,13 +1,14 @@
-import assert from "assert";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as types from "https://esm.sh/ast-types";
 const b = types.builders;
 const isObject = types.builtInTypes.object;
 const isArray = types.builtInTypes.array;
-import { normalize as normalizeOptions } from "./options";
-import { fromString } from "./lines";
-import { attach as attachComments } from "./comments";
-import * as util from "./util";
-import { Options } from "./options";
+import { normalize as normalizeOptions } from "./options.ts";
+import { fromString } from "./lines.ts";
+import { attach as attachComments } from "./comments.ts";
+import * as util from "./util.ts";
+import { Options } from "./options.ts";
+import esprima from "https://esm.sh/esprima";
 
 export function parse(source: string, options?: Partial<Options>) {
   options = normalizeOptions(options);
@@ -39,7 +40,7 @@ export function parse(source: string, options?: Partial<Options>) {
   // to avoid this fallback.
   const tokens: any[] = Array.isArray(ast.tokens)
     ? ast.tokens
-    : require("esprima").tokenize(sourceWithoutTabs, {
+    : esprima.tokenize(sourceWithoutTabs, {
         loc: true,
       });
 

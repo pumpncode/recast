@@ -1,7 +1,7 @@
-import assert from "assert";
-import { comparePos } from "./util";
-import { namedTypes } from "ast-types";
-import { Lines } from "./lines";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import { comparePos } from "./util.ts";
+import { namedTypes } from "https://esm.sh/ast-types";
+import { Lines } from "./lines.ts";
 
 type Pos = namedTypes.Position;
 type Loc = namedTypes.SourceLocation;

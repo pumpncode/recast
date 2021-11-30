@@ -1,7 +1,7 @@
-import assert from "assert";
-import fs from "fs";
-import path from "path";
-import { fromString, concat, countSpaces, Lines } from "../lib/lines";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import path from "https://deno.land/std@0.116.0/node/path.ts";
+import { fromString, concat, countSpaces, Lines } from "../lib/lines.ts";
 import { EOL as eol } from "os";
 
 function check(a: any, b: any) {

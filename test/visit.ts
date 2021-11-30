@@ -1,9 +1,9 @@
-import assert from "assert";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as types from "https://esm.sh/ast-types";
 const namedTypes = types.namedTypes;
 const builders = types.builders;
-import { parse } from "../lib/parser";
-import { Printer } from "../lib/printer";
+import { parse } from "../lib/parser.ts";
+import { Printer } from "../lib/printer.ts";
 import { EOL as eol } from "os";
 
 const lines = [

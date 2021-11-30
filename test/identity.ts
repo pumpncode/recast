@@ -1,8 +1,8 @@
-import assert from "assert";
-import fs from "fs";
-import path from "path";
-import * as types from "ast-types";
-import * as recast from "../main";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import path from "https://deno.land/std@0.116.0/node/path.ts";
+import * as types from "https://esm.sh/ast-types";
+import * as recast from "../main.ts";
 
 const nodeMajorVersion = parseInt(process.versions.node, 10);
 

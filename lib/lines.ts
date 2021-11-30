@@ -1,9 +1,9 @@
-import assert from "assert";
-import sourceMap from "source-map";
-import { normalize as normalizeOptions, Options } from "./options";
-import { namedTypes } from "ast-types";
-import { comparePos } from "./util";
-import Mapping from "./mapping";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import sourceMap from "https://esm.sh/source-map";
+import { normalize as normalizeOptions, Options } from "./options.ts";
+import { namedTypes } from "https://esm.sh/ast-types";
+import { comparePos } from "./util.ts";
+import Mapping from "./mapping.ts";
 
 type Pos = namedTypes.Position;
 

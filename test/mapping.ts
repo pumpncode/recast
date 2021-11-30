@@ -1,13 +1,13 @@
-import assert from "assert";
-import sourceMap from "source-map";
-import * as recast from "../main";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import sourceMap from "https://esm.sh/source-map";
+import * as recast from "../main.ts";
+import * as types from "https://esm.sh/ast-types";
 const n = types.namedTypes;
 const b = types.builders;
 const NodePath = types.NodePath;
-import { fromString } from "../lib/lines";
-import { parse } from "../lib/parser";
-import { Printer } from "../lib/printer";
+import { fromString } from "../lib/lines.ts";
+import { parse } from "../lib/parser.ts";
+import { Printer } from "../lib/printer.ts";
 import { EOL as eol } from "os";
 
 describe("source maps", function () {

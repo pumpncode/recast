@@ -1,8 +1,8 @@
-import assert from "assert";
-import fs from "fs";
-import path from "path";
-import * as types from "ast-types";
-import { parse } from "../lib/parser";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import fs from "https://deno.land/std@0.116.0/node/fs.ts";
+import path from "https://deno.land/std@0.116.0/node/path.ts";
+import * as types from "https://esm.sh/ast-types";
+import { parse } from "../lib/parser.ts";
 const hasOwn = Object.prototype.hasOwnProperty;
 
 // Babel 7 no longer supports Node 4 or 5.

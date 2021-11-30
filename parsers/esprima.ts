@@ -7,7 +7,7 @@
 //     parser: require("recast/parsers/esprima")
 //   });
 //
-import { getOption } from "../lib/util";
+import { getOption } from "../lib/util.ts";
 
 export function parse(source: string, options?: any) {
   const comments: any[] = [];

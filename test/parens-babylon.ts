@@ -1,8 +1,8 @@
-import assert from "assert";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
 import * as babylon from "@babel/parser";
-import { parse as recastParse } from "../lib/parser";
-import { Printer } from "../lib/printer";
-import * as types from "ast-types";
+import { parse as recastParse } from "../lib/parser.ts";
+import { Printer } from "../lib/printer.ts";
+import * as types from "https://esm.sh/ast-types";
 
 const printer = new Printer();
 const { namedTypes: n } = types;

@@ -1,10 +1,10 @@
-import assert from "assert";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as types from "https://esm.sh/ast-types";
 const n = types.namedTypes;
 const isArray = types.builtInTypes.array;
 const isObject = types.builtInTypes.object;
-import { Lines, concat } from "./lines";
-import { comparePos, fixFaultyLocations } from "./util";
+import { Lines, concat } from "./lines.ts";
+import { comparePos, fixFaultyLocations } from "./util.ts";
 
 type Node = types.namedTypes.Node;
 type Comment = types.namedTypes.Comment;

@@ -1,4 +1,4 @@
-import { Omit } from "ast-types/types";
+import { Omit } from "https://esm.sh/ast-types/types";
 
 /**
  * All Recast API functions take second parameter with configuration options,
@@ -165,11 +165,11 @@ interface DeprecatedOptions {
 }
 
 const defaults: Options = {
-  parser: require("../parsers/esprima"),
+  parser: await import("../parsers/esprima.ts"),
   tabWidth: 4,
   useTabs: false,
   reuseWhitespace: true,
-  lineTerminator: require("os").EOL || "\n",
+  lineTerminator: await import("https://deno.land/std@0.116.0/node/os.ts").EOL || "\n",
   wrapColumn: 74, // Aspirational for now.
   sourceFileName: null,
   sourceMapName: null,

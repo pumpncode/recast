@@ -1,7 +1,7 @@
-import assert from "assert";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as types from "https://esm.sh/ast-types";
 const n = types.namedTypes;
-import sourceMap from "source-map";
+import sourceMap from "https://esm.sh/source-map";
 const SourceMapConsumer = sourceMap.SourceMapConsumer;
 const SourceMapGenerator = sourceMap.SourceMapGenerator;
 const hasOwn = Object.prototype.hasOwnProperty;

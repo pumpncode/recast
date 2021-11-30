@@ -1,12 +1,12 @@
-import assert from "assert";
-import * as linesModule from "./lines";
-import * as types from "ast-types";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as linesModule from "./lines.ts";
+import * as types from "https://esm.sh/ast-types";
 const Printable = types.namedTypes.Printable;
 const Expression = types.namedTypes.Expression;
 const ReturnStatement = types.namedTypes.ReturnStatement;
 const SourceLocation = types.namedTypes.SourceLocation;
-import { comparePos, copyPos, getUnionOfKeys } from "./util";
-import FastPath from "./fast-path";
+import { comparePos, copyPos, getUnionOfKeys } from "./util.ts";
+import FastPath from "./fast-path.ts";
 const isObject = types.builtInTypes.object;
 const isArray = types.builtInTypes.array;
 const isString = types.builtInTypes.string;
@@ -288,7 +288,7 @@ function findReprints(newPath: any, reprints: any) {
   const oldNode = newNode.original;
   Printable.assert(oldNode);
 
-  assert.deepEqual(reprints, []);
+  assert.deepStrictEqual(reprints, []);
 
   if (newNode.type !== oldNode.type) {
     return false;

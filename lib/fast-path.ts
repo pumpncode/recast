@@ -1,6 +1,6 @@
-import assert from "assert";
-import * as types from "ast-types";
-import * as util from "./util";
+import assert from "https://deno.land/std@0.116.0/node/assert.ts";
+import * as types from "https://esm.sh/ast-types";
+import * as util from "./util.ts";
 
 const n = types.namedTypes;
 const isArray = types.builtInTypes.array;
