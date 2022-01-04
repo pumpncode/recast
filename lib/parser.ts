@@ -8,7 +8,7 @@ import { fromString } from "./lines.ts";
 import { attach as attachComments } from "./comments.ts";
 import * as util from "./util.ts";
 import { Options } from "./options.ts";
-import esprima from "https://esm.sh/esprima";
+import esprima from "https://esm.sh/esprima?pin=v58";
 
 export function parse(source: string, options?: Partial<Options>) {
   options = normalizeOptions(options);
